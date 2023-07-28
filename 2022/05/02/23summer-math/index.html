@@ -5,18 +5,47 @@
   
 
   
-  <title>Hexo</title>
+  <title>exam-2023.7_2 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://qingren-cnys.github.io/project/index.html">
+  <meta name="description" content="数学整除 以及 取模$$定义 c &#x3D; a&#x2F;b\a &#x3D; b*c\除法永远要以乘法的逆运算来理解，由第二个式子去找到第一个式子\这个理解方式便于理解逆元等运算$$ 一些整除的性质  辗转相除法：实际上就是$$gcd(a,b) &#x3D; gcd(b, a % b)\$$这个东西的时间复杂度是$ O(\log(n)) $ 证明其实很简单： 1每次进行辗转相处至少除以2，也">
+<meta property="og:type" content="article">
+<meta property="og:title" content="exam-2023.7_2">
+<meta property="og:url" content="https://qingren-cnys.github.io/project/2022/05/02/23summer-math/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数学整除 以及 取模$$定义 c &#x3D; a&#x2F;b\a &#x3D; b*c\除法永远要以乘法的逆运算来理解，由第二个式子去找到第一个式子\这个理解方式便于理解逆元等运算$$ 一些整除的性质  辗转相除法：实际上就是$$gcd(a,b) &#x3D; gcd(b, a % b)\$$这个东西的时间复杂度是$ O(\log(n)) $ 证明其实很简单： 1每次进行辗转相处至少除以2，也">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721084136131.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721085955518.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721091347720.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721091428962.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721095949825.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721100410109.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721100451563.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721100847178.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721101659887.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721102107521.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721105111981.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721105733824.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721111553981.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721112308413.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721113530578.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721113631806.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721090102342.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230722084707059.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230722085001598.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230722085559483.png">
+<meta property="og:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230722095804444.png">
+<meta property="article:published_time" content="2022-05-02T04:29:22.000Z">
+<meta property="article:modified_time" content="2023-07-28T07:12:51.100Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="OI">
+<meta property="article:tag" content="lesson">
+<meta property="article:tag" content="note">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/86139/AppData/Roaming/Typora/typora-user-images/image-20230721084136131.png">
   
     <link rel="alternate" href="/project/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -57,151 +86,13 @@
   </div>
 </header>
       <div id="middlecontent" title class="global-width sidebar-right">
-        <section id="main">
-  
-    <article id="post-生成树" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-  <div class="article-meta">
-    <a href="/project/2023/07/17/%E7%94%9F%E6%88%90%E6%A0%91/" class="article-date">
-  <time datetime="2023-07-17T11:50:58.258Z" itemprop="datePublished">2023-07-17</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-hello-world" class="article global-container article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-23summer-math" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
       
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/project/2022/05/02/hello-world/">AnteBlog---theFIRST!!!</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/project/2022/05/02/hello-world/" class="article-date">
-  <time datetime="2022-05-02T04:29:22.000Z" itemprop="datePublished">2022-05-02</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="Part-1"><a href="#Part-1" class="headerlink" title="Part 1"></a>Part 1</h2><p><strong>这是我的第一篇博客文章</strong></p>
-<h4 id="我的简介"><a href="#我的简介" class="headerlink" title="我的简介"></a>我的简介</h4><p>名字:AnteAntibe Leacany<br>你也可以叫我：<strong>安特安尼巴 来看你</strong><br>至于名字的由来 <del>你不需要知道</del></p>
-<p>性别：女（是可爱的女孩子！）</p>
-<p>种族：羊 台北安陀螺（雾</p>
-<p>就读于<strong>新华实验小学</strong>（永远不会忘记这个地方和<strong>文晖中学</strong>（人少垃圾 但是导致垃圾的只有人少）</p>
-<p>身高160-170之间（主要原因是我没有量过 雾）</p>
-<p>特长？没有特长什么都不会 但是我喜欢打羽毛球和日常捣鼓捣鼓电脑和魔方 喜欢打音游但是我实在是太菜了</p>
-<p>混的圈子：一个<strong>oier</strong>，但是十分的菜，只能虐虐普及题。我还是一个* scer <em>但是接受不能各大社区把我们这些有锐气的青年当作摇钱树的行为。<br>我是一个十分想学习并且努力积攒经验的<strong>梦想中的作曲家</strong>，我是一名刀客塔，50级萌新。我还喜欢玩phigros、orzmic等*</em> 音游 *<em>，持续关注BOF<br>比赛并时常浏览铺面（太菜了打不来www）十分想混入mws的写文圈子，另外我还非常希望可以混</em>波兰球<em>、</em>backrooms<em>和</em>东方porject*的圈子</p>
-<p>曾用圈名：牛粑粑-&gt;牛粪CNYS-&gt;青韧CNYS-&gt;CaneTian-&gt;AnteAntibe-&gt;Ante.Antibe Leacany</p>
-<p>入站：小码王是我最先进入的站点 然后大概是b站 陆续注册了许多地方的账号（老福特，a站还有各种社区之类的），是真的想去mws但是真说没有时间</p>
-<p>学业水平并不是非常好 在文晖这种公办都不散顶尖的屑校只能排年纪前十 有时候甚至坐不住。oi的最高奖项？拜托我什么都没有……羽毛球最好成绩是<br>区第三和一个小比赛（虽然大佬都来了qwq）的第五名（不幸中的万幸了属于是）</p>
-<p>就到这里吧 ~</p>
-<h4 id="设子的简介"><a href="#设子的简介" class="headerlink" title="设子的简介"></a>设子的简介</h4><p>##Part2</p>
-<p>##感谢教程大佬和scerX对我的帮助！这才使这个博客可以如我所愿的诞生！</p>
-
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-20230723-zongjie-after-exam" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/project/2022/05/02/20230723-zongjie-after-exam/">exam-2023.7_2</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/project/2022/05/02/20230723-zongjie-after-exam/" class="article-date">
-  <time datetime="2022-05-02T04:29:22.000Z" itemprop="datePublished">2022-05-02</time>
-</a>
-    
-    
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/project/tags/OI/" rel="tag">OI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/project/tags/down/" rel="tag">down</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h1 id="第二次测试总结"><a href="#第二次测试总结" class="headerlink" title="第二次测试总结"></a>第二次测试总结</h1><p>这次是完全的 自然的 毋庸置疑的 是我自己的问题 </p>
-<p>但是我们伟大的zzy老师说过：保持良好的心态是人生的第一要务</p>
-<p>嗯，所以，我就以<code>良好的心态</code>写下了这篇总结。</p>
-<p><strong>首先，我的问题是*细节*这个问题真的 真的 真的很大</strong>  这个一会再说</p>
-<h2 id="时间安排"><a href="#时间安排" class="headerlink" title="时间安排"></a>时间安排</h2><p>其实这一次的时间安排我觉得还可以。所以最后我基本都做出来了题目 <del>虽然最后没拿分</del></p>
-<p>我上来就看到之前复习过的T2，分层图一打，dij一打，一共花了十分钟不到直接过掉了。但是后来改成了双向边导致我这题爆0了。不然就ac了阿喂！</p>
-<p>首先我花了一个小时去调T1，在时间安排方面这大概是我最大的错误。主要原因是我记住了做法，而且记得滚瓜烂熟，但是我忘记了答案6的含义（题意真的好迷惑） 所以求出来的3我调了半天。最后我发现了这一点就直接过了</p>
-<p>然后就是花了20分钟去推之前挂掉的T3，推出来之后发现太烦了，所以直接跳了。事实证明我这个决定是对的。不然我就没有时间去写了。（我记得当时我就写了90行，缩点我又不是很熟练，所以就理所应当的没有继续下去</p>
-<p>然后是T4.这一题因为当时写的超级顺利，所以有一点小小的忘记掉了。所以我花了大概8、9分钟去推式子。最后我觉得很对然后花了二十分钟敲上去了，又调了五分钟。最后很成功的过了。但是最后我发现这个玩意儿建 边 是 错 的。我把一个<em>0</em>错写成了*-k*，这就是我思考不全面的后果。</p>
-<p>这个时候时间只剩下了一个小时。我开了剩下两道题。我一瞅T5，哎哟这不也是做过的题吗（以前写题写到过 </p>
-<p>我看对面的大神说这个题它分治是能过的，我本来的想法就是我记忆里面的区间dp。我推了半天，最后终于推出个像样的。然后就写出来了一个很不成熟的。然后改改改改改终于改成了很像正解的一个东西。但是……终究是很像而已</p>
-<p>T6我想了个区间维护前缀和，虽然最后陈彦铭大神最终想出了更牛逼的办法。但是我仍然觉得它是没什么问题的。</p>
-<p>最后比赛就这么结束了，我还挺自信，结果，哈哈。</p>
-<h2 id="细节问题"><a href="#细节问题" class="headerlink" title="细节问题"></a>细节问题</h2><p>说实话。关于这件事情我一 直 很 迷 惑</p>
-<p>有的时候真的对自己非常生气</p>
-<p>为什么？</p>
-<p>为什么？</p>
-<p>是啊 为什么呢？</p>
-<p>道理我都懂，我就没有懂过。有时候我宁愿你们多骂骂我。我真的不知道应该从何去改这个事情了。</p>
-<p>我在文化课上也是这样，比如我五门课必定砸一门课。</p>
-<p>T1 加的时候最后一位没加   T2.双向边成了单项边  T4.-k变成了0，是在推式子的时候有一个符号写错了</p>
-<p>T5.mid,j-1写成j+1(但凡带个脑子)</p>
-<p>我平时写程序也是这样。经常一个小错一整天。</p>
-<p>天呐。虽然我划了关键词还检查了，我还要疯狂练代码能力。但是这样真的有什么用吗？哈哈，有些事情真的好想不到办法，但是这个性格缺陷是我不得不客服的。</p>
-<p>我深知这一点。</p>
-
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-23summer-math" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/project/2022/05/02/23summer-math/">exam-2023.7_2</a>
+    <h1 class="article-title" itemprop="name">
+      exam-2023.7_2
     </h1>
   
 
@@ -216,6 +107,10 @@
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/project/tags/OI/" rel="tag">OI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/project/tags/lesson/" rel="tag">lesson</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/project/tags/note/" rel="tag">note</a></li></ul>
 
   </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
   
 
   <div class="article-inner">
@@ -286,15 +181,51 @@
       
     </div>
     
+      <footer class="article-footer">
+        完
+      </footer>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/project/2022/05/02/20230723-zongjie-after-exam/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            exam-2023.7_2
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
   
   
 </article>
-
-  
-
-
-
 </section>
         <aside id="sidebar">
   
